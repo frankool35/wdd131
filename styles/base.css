@@ -86,7 +86,7 @@ main {
   border-radius: 5px;
 }
 
-.card h3 {
+.card h2 {
     text-align: center;
     margin-top: 1rem;
     color:black
@@ -108,12 +108,15 @@ main {
 .card ul {
   list-style-type: disc;
   padding-left: 2rem;
+  text-decoration: underline;
+  color: blue;
 }
+
 
 .card li {
   margin: 0.5rem 0;
-  
 }
+
 
 .card a {
   color: darkslategray;
