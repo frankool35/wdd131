@@ -14,10 +14,11 @@ body {
   background: #f9f9f9;
 }
 
+/* ---------------- HEADER & NAV ---------------- */
 header {
   background: #2a4d69;
   color: white;
-  padding: 1rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,70 +28,49 @@ header h1 {
   font-size: 1.5rem;
 }
 
-/* ☰ button */
-#menu {
-  font-size: 1.8rem;
+/* Nav bar base */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+  background-color: #333;
+  color: aquamarine;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+/* Hamburger button */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
-  display: none; /* hidden on large screens */
 }
 
-/* Normal nav (large screens) */
-.navigation {
-  display: flex;
-  gap: 1rem;
+/* ---------------- MAIN CONTENT ---------------- */
+h2 {
+  text-align: center;
 }
 
-.navigation a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.navigation a:hover {
-  text-decoration: underline;
-  background-color: #333;
-  color: aquamarine;
-}
-
-/* ===== Side Nav for small screens ===== */
-.side-nav {
-  height: 100%;
-  width: 0; /* hidden by default */
-  position: fixed;
-  top: 0;
-  right: 0; /* slides in from right */
-  background: #111;
-  overflow-x: hidden;
-  transition: 0.3s;
-  padding-top: 60px;
-  z-index: 999;
-}
-
-.side-nav a {
-  display: block;
-  padding: 10px 20px;
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
-}
-
-.side-nav a:hover {
-  background: #575757;
-}
-
-.side-nav .closebtn {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-}
-
-/* ===== Gallery ===== */
 main {
   max-width: 800px;
   margin: 0 auto;
@@ -121,7 +101,7 @@ figcaption {
   font-weight: 600;
 }
 
-/* ===== Footer ===== */
+/* ---------------- FOOTER ---------------- */
 footer {
   text-align: center;
   padding: 1rem;
@@ -130,24 +110,31 @@ footer {
   margin-top: 2rem;
 }
 
-/* ===== Media Queries ===== */
+/* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
-  .navigation {
-    display: none; /* hide default nav */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #2a4d69;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
   }
 
-  #menu {
-    display: block; /* show ☰ */
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width:840px) {
   body {
     background-color: lightblue;
   }
-}
-
-main h1 {
-  text-align: center;
-  margin: 20px 0;
 }
