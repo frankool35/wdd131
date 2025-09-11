@@ -10,3 +10,11 @@ menuButton.addEventListener("click", () => {
   navigation.style.display = navigation.style.display === "flex" ? "none" : "flex";
   menuButton.textContent = menuButton.textContent === "✖" ? "☰" : "✖";
 });
+
+function openNav() {
+  document.getElementById("mySideNav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySideNav").style.width = "0";
+}
