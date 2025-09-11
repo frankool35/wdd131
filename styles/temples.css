@@ -93,3 +93,9 @@ footer {
   color: white;
   margin-top: 2rem;
 }
+
+@media (max-width:840px)  {
+  body {
+    background-color: lightblue;
+}
+}
