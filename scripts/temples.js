@@ -18,3 +18,4 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySideNav").style.width = "0";
 }
+
