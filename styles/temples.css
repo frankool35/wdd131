@@ -33,13 +33,14 @@ header h1 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 10px 20px;
 }
 
 
 /* Links */
 .nav-links {
   list-style: none;
-  display: flex;
+  display: flex; /* visible on desktop */
   gap: 15px;
 }
 
@@ -59,7 +60,7 @@ header h1 {
 
 /* Hamburger button */
 .menu-toggle {
-  display: none;
+  display: none;  /* hidden on desktop */
   font-size: 24px;
   background: none;
   border: none;
@@ -139,3 +140,9 @@ footer {
     background-color: lightblue;
   }
 }
+
+
+.nav-links.active {
+  display: flex;
+}
+
