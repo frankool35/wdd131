@@ -1,0 +1,90 @@
+
+/* Large view layout */
+@media (min-width: 768px) {
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #222;
+  }
+
+  header {
+    background-color: #008751; /* Nigerian green */
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    position: relative;   /*  anchor point for absolute children */
+    display: inline-block;
+    width: 100%;
+    max-width:1200px;
+    height: auto;
+    
+  }
+
+
+  .hero picture, .hero img {
+  width: 100%;       /* full width */
+  height: auto;      /* maintain aspect ratio */
+  max-height: 500px; /* limit vertical space */
+  display: block;
+}
+
+
+  /* FLOATING BOXES */
+  .data,
+  .weather {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #008751; /* green accent stripe */
+  }
+
+  /* Data floats a bit higher (not hugging bottom) */
+  .data {
+    top: 50px;   /* moved up */
+    left: 40px;      /* give breathing room from edge */
+  }
+
+  /* Weather stays low but not extreme */
+  .weather {
+    bottom: 40px;    /* not hugging edge */
+    right: 40px;     /* not hugging edge */
+  }
+
+
+  footer {
+    background-color: #008751;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+}
+
+.hero picture, .hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0; 
+}
+
+.hero {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
