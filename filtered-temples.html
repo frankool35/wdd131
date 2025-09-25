@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="author" content="Etim Frank">
+    <meta name="description" content="Temple Album Activity">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+  <h1>Temple Album</h1>
+  <nav class="navbar">
+   
+    <!-- Hamburger button -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+
+    <!-- Navigation links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#old">Old</a></li>
+      <li><a href="#new">New</a></li>
+      <li><a href="#large">Large</a></li>
+      <li><a href="#small">Small</a></li>
+    </ul>
+  </nav>
+</header>
+
+      <main>
+  <h2>Home</h2>
+      <div id="temple-cards" class="temple-cards"></div>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> 🌺 Etim Frank 🌺 Lagos, Nigeria</p>
+    <p>Last modified: <span id="lastModified"></span></p>
+</footer>
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+
+</html>
