@@ -2,7 +2,7 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// Hamburger menu (fixed to match your HTML)
+// Hamburger menu 
 const menuButton = document.querySelector("#menu-toggle");
 const navigation = document.querySelector("#nav-links");
 

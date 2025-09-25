@@ -38,7 +38,7 @@ header h1 {
 
 
 /* Links */
-.nav-links {
+#nav-links {
   list-style: none;
   display: flex; /* visible on desktop */
   gap: 15px;
@@ -59,7 +59,7 @@ header h1 {
 }
 
 /* Hamburger button */
-.menu-toggle {
+#menu-toggle {
   display: none;  /* hidden on desktop */
   font-size: 24px;
   background: none;
@@ -67,6 +67,7 @@ header h1 {
   color: white;
   cursor: pointer;
 }
+
 
 /* ---------------- MAIN CONTENT ---------------- */
 h2 {
