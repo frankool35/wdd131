@@ -7,7 +7,7 @@ const menuButton = document.querySelector("#menu-toggle");
 const navigation = document.querySelector("#nav-links");
 
 menuButton.addEventListener("click", () => {
-  navigation.classList.toggle("active");
+  navigation.classList.toggle("show");
   menuButton.textContent = menuButton.textContent === "✖" ? "☰" : "✖";
 });
 
@@ -19,17 +19,6 @@ function closeNav() {
   document.getElementById("mySideNav").style.width = "0";
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const toggleButton = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
-
-  if (toggleButton && navLinks) {
-    toggleButton.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-      navLinks.classList.toggle("show");
-    });
-  }
-});
 
 const temples = [
   {
