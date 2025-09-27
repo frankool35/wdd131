@@ -3,8 +3,8 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
 // Hamburger menu 
-const menuButton = document.querySelector("#menu-toggle");
-const navigation = document.querySelector("#nav-links");
+const menuButton = document.getElementById("menu-toggle");
+const navigation = document.getElementById("nav-links");
 
 menuButton.addEventListener("click", () => {
   navigation.classList.toggle("show");

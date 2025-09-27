@@ -40,6 +40,7 @@ header h1 {
   list-style: none;
   display: flex; /* visible on desktop */
   gap: 1rem;
+  color: white;
 }
 
 .nav-links li a {
@@ -124,6 +125,7 @@ footer {
     width: 150px;
     padding: 10px;
     border-radius: 8px;
+    z-index: 1000;
   }
 /* show only when toggled by JS */
   #nav-links.show {
