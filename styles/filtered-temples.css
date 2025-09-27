@@ -40,7 +40,6 @@ header h1 {
   list-style: none;
   display: flex; /* visible on desktop */
   gap: 1rem;
-  flex-direction:column;
 }
 
 .nav-links li a {
@@ -114,7 +113,7 @@ footer {
 
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
-  .nav-links {
+  #nav-links {
     display: none;
     flex-direction: column;
     background-color: #2a4d69;
