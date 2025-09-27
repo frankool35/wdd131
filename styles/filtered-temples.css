@@ -34,7 +34,6 @@ header h1 {
   padding: 10px 20px;
 }
 
-
 /* Links */
 #nav-links {
   list-style: none;
@@ -43,13 +42,13 @@ header h1 {
   color: white;
 }
 
-.nav-links li a {
+#nav-links li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.nav-links li a:hover {
+#nav-links li a:hover {
   text-decoration: underline;
   background-color: #333;
   color: aquamarine;
@@ -66,7 +65,6 @@ header h1 {
   color: white;
   cursor: pointer;
 }
-
 
 /* ---------------- MAIN CONTENT ---------------- */
 h2 {
@@ -127,7 +125,8 @@ footer {
     border-radius: 8px;
     z-index: 1000;
   }
-/* show only when toggled by JS */
+
+  /* show only when toggled by JS */
   #nav-links.show {
     display: flex;
   }
@@ -143,7 +142,7 @@ footer {
   }
 }
 
-
+/* ---------------- TEMPLE CARDS ---------------- */
 .temple-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
