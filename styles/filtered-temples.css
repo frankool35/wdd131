@@ -125,7 +125,7 @@ footer {
     border-radius: 8px;
   }
 
-  .nav-links.show {
+  #nav-links.show {
     display: flex;
   }
 
@@ -140,10 +140,6 @@ footer {
   }
 }
 
-
-.nav-links.active {
-  display: flex;
-}
 
 .temple-cards {
   display: grid;
