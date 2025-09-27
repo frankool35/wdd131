@@ -39,7 +39,8 @@ header h1 {
 #nav-links {
   list-style: none;
   display: flex; /* visible on desktop */
-  gap: 15px;
+  gap: 1rem;
+  flex-direction:column;
 }
 
 .nav-links li a {

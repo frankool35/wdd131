@@ -8,7 +8,7 @@ const navigation = document.querySelector("#nav-links");
 
 menuButton.addEventListener("click", () => {
   navigation.classList.toggle("show");
-  menuButton.textContent = menuButton.textContent === "✖" ? "☰" : "✖";
+  menuButton.textContent = menuButton.textContent("show") ? "☰" : "✖";
 });
 
 function openNav() {

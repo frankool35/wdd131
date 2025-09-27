@@ -50,6 +50,8 @@
 
   menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("show");
+   menuToggle.textContent = navLinks.classList.contains("show") ? "✖" : "☰";
+
   });
 </script>
 </body>
