@@ -3,12 +3,12 @@ document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
 // Hamburger menu 
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
+const menuButton = document.getElementById("menu-toggle");
+const navigation = document.getElementById("nav-links");
 
 menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-  menuToggle.textContent = navLinks.classList.contains("show") ? "✖" : "☰";
+  navlink.classList.toggle("show");
+  menuToggle.textContent = navlink.classList.contain("show") ? "☰" : "✖";
 });
 
 function openNav() {
