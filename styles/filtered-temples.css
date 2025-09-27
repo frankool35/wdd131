@@ -113,6 +113,7 @@ footer {
 
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 768px) {
+  /* hides on small screens */
   #nav-links {
     display: none;
     flex-direction: column;
@@ -124,7 +125,7 @@ footer {
     padding: 10px;
     border-radius: 8px;
   }
-
+/* show only when toggled by JS */
   #nav-links.show {
     display: flex;
   }
