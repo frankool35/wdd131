@@ -98,6 +98,14 @@ header h1 {
   height: auto;
 }
 
+/*  ::after pseudo-element used*/
+.weather-icon::after {
+  content: "";
+  display: block;
+  height: 2px;
+}
+
+
 .weather ul {
   list-style: none;
 }
