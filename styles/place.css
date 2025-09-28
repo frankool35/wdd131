@@ -91,7 +91,7 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-/* Weather icon beside heading */
+/* Weather icon resize*/
 .weather-icon {
   width: 48px ! important;
   /* small like old API icon */
