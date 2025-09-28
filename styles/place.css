@@ -1,10 +1,13 @@
-/* =======================
+/* ======================= 
    Global Styles & Variables
 ======================= */
 :root {
-  --primary-color: #008751;   /* Nigerian green */
-  --secondary-color: #ffffff; /* White */
-  --accent-color: #f4f4f4;    /* Light gray for backgrounds */
+  --primary-color: #008751;
+  /* Nigerian green */
+  --secondary-color: #ffffff;
+  /* White */
+  --accent-color: #f4f4f4;
+  /* Light gray for backgrounds */
   --text-color: #222;
   --max-width: 1200px;
 }
@@ -78,9 +81,21 @@ header h1 {
   border-radius: 8px;
 }
 
+/* Weather heading + icon inline */
 .weather h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* space between text and icon */
   color: var(--primary-color);
   margin-bottom: 0.5rem;
+}
+
+/* Weather icon beside heading */
+.weather-icon {
+  width: 48px ! important;
+  /* small like old API icon */
+  height: auto;
 }
 
 .weather ul {
@@ -89,13 +104,6 @@ header h1 {
 
 .weather li {
   margin: 0.25rem 0;
-}
-
-.weather-icon {
-  width: 50px;
-  height: auto;
-  display: block;
-  margin-bottom: 0.5rem;
 }
 
 /* =======================
@@ -111,6 +119,11 @@ footer {
 
 footer p {
   margin: 0.25rem 0;
+}
+
+.weather-icon-container {
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* =======================
@@ -138,15 +151,5 @@ footer p {
 
   .weather {
     grid-area: weather;
-  }
-
-  /* Weather icon as pseudo-element */
-  .weather h2::after {
-    content: " ⛅"; /* emoji for larger screens */
-    margin-left: 0.5rem;
-  }
-
-  .weather-icon {
-    display: none; /* hide SVG in large view */
   }
 }
