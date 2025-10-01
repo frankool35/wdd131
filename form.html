@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+      <meta name="description" content="Product review form with dynamic product list and confirmation page">
+  <meta name="author" content="Etim Frank">
+  <link rel="stylesheet" href="styles/form.css">
+<!-- Google Fonts preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google Fonts stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="scripts/form.js" defer></script>
+
+</head>
+<body>
+    <header>
+    <h1>Product Review</h1>
+    <p>Tell us what you think — select a product, rate it, and write a short review.</p>
+  </header>
+
+  <main>
+    <form id="reviewForm" method="get" action="review.html" novalidate>
+      <!-- Product Name (select populated by JS) -->
+      <div class="form-row">
+        <label for="productName">Product Name <span class="required">*</span></label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+          <!-- Options will be populated dynamically via JavaScript -->
+        </select>
+      </div>
+
+      <!-- Overall Rating (radio 1-5) -->
+      <!-- Overall Rating (radio 1-5) -->
+<fieldset class="form-row">
+  <legend>Overall Rating <span class="required">*</span></legend>
+  
+  <!-- Stars row -->
+  <div class="stars-row">
+    <span>☆</span>
+    <span>☆☆</span>
+    <span>☆☆☆</span>
+    <span>☆☆☆☆</span>
+    <span>☆☆☆☆☆</span>
+  </div>
+
+  <!-- Circles row (radio buttons) -->
+  <div class="rating-group" role="radiogroup" aria-labelledby="rating-legend">
+    <input type="radio" id="rating1" name="rating" value="1" required>
+    <label for="rating1" title="1 star"></label>
+
+    <input type="radio" id="rating2" name="rating" value="2" required>
+    <label for="rating2" title="2 stars"></label>
+
+    <input type="radio" id="rating3" name="rating" value="3" required>
+    <label for="rating3" title="3 stars"></label>
+
+    <input type="radio" id="rating4" name="rating" value="4" required>
+    <label for="rating4" title="4 stars"></label>
+
+    <input type="radio" id="rating5" name="rating" value="5" required>
+    <label for="rating5" title="5 stars"></label>
+  </div>
+</fieldset>
+
+      <!-- Date of Installation -->
+      <div class="form-row">
+        <label for="installationDate">Date of Installation <span class="required">*</span></label>
+        <input type="date" id="installationDate" name="installationDate" required>
+      </div>
+
+      <!-- Useful Features (checkboxes, check all that apply) -->
+      <fieldset class="form-row">
+        <legend>Which features did you find useful in the product? <small>(Check all that apply)</small></legend>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="featureDurability" name="features" value="Durability">
+          <label for="featureDurability">Durability</label>
+
+          <input type="checkbox" id="featureEase" name="features" value="Ease of Use">
+          <label for="featureEase">Ease of Use</label>
+
+          <input type="checkbox" id="featurePerformance" name="features" value="Performance">
+          <label for="featurePerformance">Performance</label>
+
+          <input type="checkbox" id="featureDesign" name="features" value="Design">
+          <label for="featureDesign">Design</label>
+        </div>
+      </fieldset>
+
+      <!-- Written Review -->
+      <div class="form-row">
+        <label for="writtenReview">Written Review <small>(Optional)</small></label>
+        <textarea id="writtenReview" name="writtenReview" rows="6" placeholder="Write your review here..."></textarea>
+      </div>
+
+      <!-- User Name -->
+      <div class="form-row">
+        <label for="userName">Your Name <small>(Optional)</small></label>
+        <input type="text" id="userName" name="userName" placeholder="Your name">
+      </div>
+
+      <!-- Submit -->
+      <div class="form-row">
+        <input type="submit" id="submitBtn" value="Post Review">
+      </div>
+    </form>
+  </main>
+
+  <footer >
+     <p>&copy; <span id="currentyear"></span> 🌸Etim Frank 🌸 Lagos</p>
+    <p id="lastModified"></p>
+
+  </footer>
+
+
+    
+</body>
+</html>

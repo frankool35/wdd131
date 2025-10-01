@@ -1,0 +1,162 @@
+/* ========================
+   General Reset & Base
+======================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: white;
+  color: #333;
+  padding: 1rem;
+}
+
+/* ========================
+   Layout
+======================== */
+header, footer {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  color: #2a5d9f;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  background: darkseagreen;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.form-row {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label, legend {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.required {
+  color: red;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* ========================
+   Rating Stars
+======================== */
+
+.stars-row {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  color: darkmagenta;
+  margin-bottom: 5px;
+}
+
+/* Rating row (circles below) */
+.rating-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rating-group input[type="radio"] {
+  display: none; /* hide default */
+}
+
+.rating-group label {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* When selected */
+.rating-group input[type="radio"]:checked + label {
+  background-color: indigo;
+}
+
+/* ========================
+   Checkboxes
+======================== */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.checkbox-group input {
+  margin-right: 0.3rem;
+}
+
+/* ========================
+   Submit Button
+======================== */
+input[type="submit"] {
+  background: palevioletred;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: blue;
+}
+
+/* ========================
+   Footer
+======================== */
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: white;
+    background-color: darkseagreen;   /* paint with dark green */
+ text-align: center;            /* center text */
+  padding: 20px;                 /* spacing inside box */
+  border-radius: 8px;            /* optional: rounded corners */
+  max-width: 600px;             /* optional: container width */
+  margin-left: auto;
+  margin-right: auto;            /* centers the box */
+border: 1 px solid #ccc;
+
+  
+}
+
+/* ========================
+   Responsive
+======================== */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  .rating-group {
+    gap: 0.5rem;
+  }
+}
