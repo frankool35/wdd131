@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kpec Schools | Apply Now</title>
+  <link rel="stylesheet" href="styles/kpecsite.css">
+ <link rel="stylesheet" href="../styles/kpecsite.css">
+<script src="../scripts/kpecsite.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="../images/logo.webp" alt="Kpec School Logo" />
+      <h1>Kpec Schools</h1></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="tuition.html">Tuition</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="apply.html" class="apply-btn active">Apply Now</a></li>
+      </ul>
+    </nav>
+  </header>
+   <!-- ✅ Clock display -->
+  <div id="clock"></div>
+
+
+  <main>
+    <section>
+      <h2>Application Form</h2>
+      <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="class">Applying for Class:</label>
+        <select id="class">
+          <option>Junior Secondary</option>
+          <option>Senior Secondary</option>
+          <option>kpec Foundation</option>
+          <option>kpec Tutorial college</option>
+        </select>
+
+        <label for="statement">Personal Statement:</label>
+        <textarea id="statement"></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> 2025 KPEC Schools | 77, Agboyi Road, Alapere Ketu-Lagos | 
+       Phone: 07034776803 | Email: kpec568@yahoo.com</p>
+    <p><a href="references.html">References</a></p>
+     <p id="lastModified"></p>
+
+  </footer>
+</body>
+</html>

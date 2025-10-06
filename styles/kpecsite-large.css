@@ -1,0 +1,88 @@
+/* ==============================
+   KPEC Schools Site CSS (Large Screens)
+   File: kpecsite-large.css
+   ============================== */
+
+@media (min-width: 768px) {
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 1rem 2rem;
+  }
+
+  header .logo h1 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+  list-style: none;   /* remove bullets */
+  display: flex;      /* make items horizontal */
+  justify-content: center; /* center them */
+  gap: 2rem;          /* space between items */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+  .apply-btn {
+    background: var(--accent-color);
+    color: var(--primary-color);
+  }
+
+  /* Main Layout */
+  main {
+    padding: 2rem 4rem;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+}
+
+/* ===== Quick-links: force chartreuse links ===== */
+:root {
+  --chartreuse: #7FFF00; /* chartreuse hex */
+}
+
+/* Target link states and increase selector specificity */
+.quick-links .cards .card a,
+.quick-links .card a,
+.quick-links .cards .card a:link,
+.quick-links .cards .card a:visited,
+.quick-links .cards .card a:active,
+.quick-links .cards .card a:hover {
+  color: var(--chartreuse);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 14px;
+  border: 2px solid var(--chartreuse);
+  border-radius: 8px;
+  background: transparent;
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+/* Hover — invert colors for contrast */
+.quick-links .cards .card a:hover,
+.quick-links .card a:hover {
+  background: var(--chartreuse);
+  color: var(--primary-color); /* ensure readable text on hover */
+}
+
+/* If some rule still wins, this increases priority (use only if necessary) */
+/* .quick-links .cards .card a { color: var(--chartreuse) !important; } */
