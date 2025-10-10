@@ -3,8 +3,8 @@ const menuToggle = document.getElementById("menu-toggle");
 const navbar = document.getElementById("navbar");
 
 menuToggle.addEventListener("click", () => {
- navbar.classList.toggle("show");
- menuToggle.textContent = navbar.classList.contain("show") ? "☰" : "✖";
+ navbar.classList.toggle("active");
+ menuToggle.textContent = navbar.classList.contain("active") ? "☰" : "✖";
 });
 
 
