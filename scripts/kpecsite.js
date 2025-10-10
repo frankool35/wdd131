@@ -1,20 +1,11 @@
 // ===== Toggle Mobile Navigation =====
-// Hamburger menu 
-const menuButton = document.getElementById("menu-toggle");
-const navigation = document.getElementById("nav-links");
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
 
 menuToggle.addEventListener("click", () => {
-  navlink.classList.toggle("show");
-  menuToggle.textContent = navlink.classList.contain("show") ? "☰" : "✖";
+ navbar.classList.toggle("show");
+ menuToggle.textContent = navbar.classList.contain("show") ? "☰" : "✖";
 });
-
-function openNav() {
-  document.getElementById("mySideNav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySideNav").style.width = "0";
-}
 
 
 
